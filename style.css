@@ -103,8 +103,8 @@
   background-color: lightgray;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 20px;
   height: 80%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .col-1,
 .col-2 {
@@ -112,7 +112,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   overflow: scroll;
-  background-color: beige;
 }
 .col-1,
 #projects {
@@ -120,17 +119,44 @@
 }
 .col-2,
 #announcements {
-  margin: 20px 30px 0 0;
+  margin: 10px 30px 0 20px;
 }
 #projects {
   grid-area: 1 / 1 / 1 / 2;
-  font-size: 1.5rem;
 }
 #announcements {
   grid-area: 1 / 2 / 1 / 2;
-  font-size: 1.5rem;
 }
 .article {
   height: 200px;
-  background-color: black;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  border-left: 20px solid teal;
+}
+.article > h2 {
+  margin-bottom: 10px;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.sect-ann,
+.sect-trend {
+  height: 300px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  border-left: 20px solid teal;
+}
+
+.sect-heading {
+  font-size: 1.5rem;
 }
